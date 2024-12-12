@@ -17,6 +17,9 @@ public class text2 {
 		double Bv=bvg(100,90,80,85);
 		System.out.println("평균값 : "+ Bv);
 		
+		double dav=avg(100.5,90.5);
+		System.out.println("실수의 평균값 : "+ dav);
+		
 		int Sum=sum();
 		System.out.println("합계 : "+ Sum);
 				
@@ -61,6 +64,13 @@ public class text2 {
 		av=(a+b+c+d)/4;
 		return av;
 		}
+	
+	public static double avg(double a, double b) {
+		double av;
+		av=(a+b)/2.0;
+		return av;
+		}
+	
 	
 	public static int sum() {
 		// int a[]=new int[10];
