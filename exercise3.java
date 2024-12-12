@@ -9,9 +9,11 @@ public class exercise3 {
 		// 가중치   :  2 3 4 5 6 7 8 9 2 3 4 5  
 		int[] jumin = {8,0,1,1,0,4,1,0,0,1,3,2,2};
 		int[] w = {2,3,4,5,6,7,8,9,2,3,4,5};
-		int digitcheck;
+		boolean digitcheck;
 		
-		juminCheck(jumin, w);
+		digitcheck=juminCheck(jumin, w);
+		if(digitcheck==true) System.out.println("주민번호가 올바릅니다.");
+		else System.out.println("주민번호가 올바르지 않습니다.");
 				
 		
 	}
@@ -25,7 +27,8 @@ public class exercise3 {
 		check=11-check;
 		check=check%10;
 		System.out.println(check);
-		return true;
+		if(check==jumin[12]) return true;
+		else return false;
 	}		
 }
 
@@ -34,3 +37,4 @@ public class exercise3 {
 // 2. 합계%11(합계를 11로 나눈 나머지)  -->  :             86%11 => 9
 // 3. 11-나머지  --> 값 0,1,2,3,...,9,10                 11-9=> 2
 // 4. 값%10 나머지 --> 값  2%10                                =>2
+
