@@ -14,6 +14,6 @@ public class exercise2 {
 			System.out.println(coinUnit[i]+"¿ø:"+ money/coinUnit[i]);
 			money=money%coinUnit[i];
 	}
-	}
+  }
 
 }
