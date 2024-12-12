@@ -59,7 +59,7 @@ public class text2 {
 		return av;
 		}
 	
-	public static double bvg(double a, double b, double c, double d) {
+	public static double bvg(int a, int b, double c, double d) {
 		double av;
 		av=(a+b+c+d)/4;
 		return av;
@@ -89,7 +89,7 @@ public class text2 {
 			tum+=a[i];
 		}
 		return tum;
-	
+
      }	
 	
 }	
